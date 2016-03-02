@@ -1,0 +1,8 @@
+<h1>My Profile</h1>
+<% if current_user %>
+<ul>
+    <li>User Name: <%= current_user.name %> </li>
+    <li>Email: <%= current_user.email %></li>
+</ul>
+<%= link_to "Change My Account Info", edit_user_registration_path %>
+<% end %>

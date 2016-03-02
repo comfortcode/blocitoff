@@ -2,7 +2,7 @@
     <ul class="nav nav-tabs">
       <li><%= link_to "Home", root_path %></li>
          <% if current_user %>
-            <li><%= link_to "My Account", edit_user_registration_path %></li>
+            <li><%= link_to "My Account", users_show_path %></li>
             <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
             <!--<li> Hello <%= (current_user.name || current_user.email)%>!</li>-->
          <% else %>
