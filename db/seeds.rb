@@ -17,7 +17,7 @@ require 'faker'
    Item.create!(
      user:   users.sample,
      name:  Faker::Lorem.sentence,
-     created_at: Faker::Time.between(DateTime.now - 6, DateTime.now)
+     created_at: Faker::Time.between(DateTime.now - 9, DateTime.now)
    )
  end
 items = Item.all
