@@ -5,9 +5,8 @@ class ItemsController < ApplicationController
   end 
   
   def create
-    @user = current_user
-    @item = Item.new(params.require(:item).permit(:name))
-    @item.user = @user
+    @item = current_user.items.new(params.require(:item).permit(:name))
+
      if @item.save
        flash[:notice] = "Your new item was saved!"
      else
