@@ -16,4 +16,10 @@ class ItemsController < ApplicationController
      redirect_to users_show_path
   end
 
+ def destroy
+     @item = Item.find(params[:id])
+     @item.destroy
+ end
+
+
 end

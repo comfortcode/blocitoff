@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources 'items', :only => [:new, :create]
+  resources 'items', :only => [:new, :create, :destroy]
   get 'users/show'
   root to: 'pages#landing'
   devise_for :users

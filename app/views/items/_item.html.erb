@@ -1,1 +1,6 @@
-<%= item.name %>
+<%= content_tag :div, id: "item-#{item.id}" do %>
+    <li>
+    <%= item.name %>
+    <%= link_to "", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+    </li>
+<% end %>
