@@ -17,7 +17,7 @@ class ItemsController < ApplicationController
      else
        flash[:error] = "There was an error saving the item. Please try again!"
      end
-     redirect_to didit_path
+     redirect_to list_path
   end
 
  def destroy

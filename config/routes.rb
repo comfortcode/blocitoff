@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources 'items', :only => [:new, :create, :destroy]
   get 'users/show'
   get 'profile' => 'users#show'
-  get 'didit' => 'items#index'
+  get 'list' => 'items#index'
   root to: 'pages#landing'
   devise_for :users
 
