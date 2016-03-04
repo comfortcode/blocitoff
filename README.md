@@ -1,3 +1,3 @@
-# Blocitoff: Self Destructing To-Do List
+# Didit: Self Destructing To-Do List
 
 Made with my mentor at [Bloc](http://bloc.io).

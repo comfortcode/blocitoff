@@ -8,13 +8,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!--<a  href="#"><b>BLOCITOFF</b></a>-->
-        <%= link_to "BLOCITOFF", root_path, class: "navbar-brand" %>
+          <!--<a  href="#"><b>DIDIT</b></a>-->
+        <%= link_to "DIDIT", root_path, class: "navbar-brand" %>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
          <% if current_user %>
-            <li><%= link_to "My Account", users_show_path %></li>
+            <li><%= link_to "My List", didit_path %></li>         
+            <li><%= link_to "Profile", users_show_path %></li>
             <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
             <!--<li> Hello <%= (current_user.name || current_user.email)%>!</li>-->
          <% else %>

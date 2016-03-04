@@ -5,11 +5,4 @@
     <li>Email: <%= current_user.email %></li>
 </ul>
 <%= link_to "Change My Account Info", edit_user_registration_path %>
-
-<hr>
-<h1>My To Do List</h1>
-<ul>
-    <%= render @items %>
-</ul>
-
 <% end %>

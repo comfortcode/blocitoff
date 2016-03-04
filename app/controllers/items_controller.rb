@@ -1,5 +1,10 @@
 class ItemsController < ApplicationController
 
+  def index
+    @items = current_user.items
+    @new_item = Item.new
+  end 
+
   def new
      @item = Item.new
   end 
@@ -12,7 +17,7 @@ class ItemsController < ApplicationController
      else
        flash[:error] = "There was an error saving the item. Please try again!"
      end
-     redirect_to users_show_path
+     redirect_to didit_path
   end
 
  def destroy
