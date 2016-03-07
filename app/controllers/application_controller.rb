@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   # When user signs in, redirect to their registry
     def after_sign_in_path_for(resource)
-      users_show_path
+      list_path
     end
 
 end

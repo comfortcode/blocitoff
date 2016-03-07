@@ -1,5 +1,5 @@
 <%= form_for item do |i| %>
-   <%= i.label :name %>
-   <%= i.text_field :name %>
-   <%= i.submit "Save" %>
+   <!--<%= i.label :name %>-->
+   <%= i.text_field :name, placeholder: 'Task Name' %>
+   <%= i.submit "Add to List" %>
  <% end %>
