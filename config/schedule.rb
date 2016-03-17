@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every :day do 
+every :minute do 
   rake "todo:delete_items"
 end
