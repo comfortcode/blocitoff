@@ -28,6 +28,13 @@ user = User.first
    email: 'nechama@gmail.com',
    password: 'helloworld'
  )
+
+user = User.last
+#  user.skip_reconfirmation!
+ user.update_attributes!(
+   email: 'noach@gmail.com',
+   password: 'helloworld'
+ )
  
  puts "Seed finished"
  puts "#{User.count} users created"
