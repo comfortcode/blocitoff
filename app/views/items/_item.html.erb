@@ -1,7 +1,5 @@
-<%= content_tag :div, id: "item-#{item.id}" do %>
-    <li>
-    <b><%= item.name %></b>
-    (<%= item.days_left %> days left)
+<%= content_tag :div, id: "item-#{item.id}", class: "tab" do %>
     <%= link_to "", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
-    </li>
+    <b><%= item.name %></b>
+    <p class ="time-remaining">(<%= item.days_left %> days left)</p>
 <% end %>
