@@ -2,5 +2,5 @@
     <%= link_to "", item, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
     <b><%= item.name %></b>
     <p class ="time-remaining">(<%= item.days_left %> days left)</p>
-    <%= image_tag(item.file.url) if item.file? %>
+    <%= link_to "File", item.file.url, target:'_blank' if item.file? %>
 <% end %>
