@@ -1,5 +1,6 @@
 <%= form_for item do |i| %>
-   <!--<%= i.label :name %>-->
    <%= i.text_field :name, placeholder: 'Task Name' %>
+   <%= i.file_field :file %>
+   <%= i.hidden_field :file_cache %>
    <%= i.submit "Add to List" %>
  <% end %>
