@@ -1,3 +1,6 @@
-# Didit: Self Destructing To-Do List
+# Didit
+Task Management Spplication
 
-Made with my mentor at [Bloc](http://bloc.io).
+Live here: [didit-app.herokuapp.com](https://didit-app.herokuapp.com/)
+
+Demo: User: user@example.com, Password: helloworld

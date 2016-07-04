@@ -1,6 +1,18 @@
-<%= form_for item do |i| %>
-   <%= i.text_field :name, placeholder: 'Task Name' %>
-   <%= i.file_field :file %>
-   <%= i.hidden_field :file_cache %>
-   <%= i.submit "Add to List" %>
- <% end %>
+<div class="panel panel-default center">
+  <div class="panel-heading">
+    Add a Task
+ </div>
+
+  <div class="panel-body">
+  <%= form_for item do |i| %>
+   <div class="form-group">
+      <%= i.text_field :name, placeholder: 'Task', class:'form-control' %>
+   </div>
+   <div class="form-group">   
+          <%= i.file_field :file %>
+          <%= i.hidden_field :file_cache %>
+   </div>
+      <%= i.submit "Add to List", class:'btn btn-primary' %>
+       <% end %>
+ </div>
+</div>
